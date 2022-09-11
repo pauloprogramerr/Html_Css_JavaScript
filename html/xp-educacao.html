@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Eventos - Mouse</title>
+	<link rel="stylesheet" href="">
+
+</head>
+<!-- Eventos Janela 
+	onload
+	onresize
+-->
+<body onload="eventosMouseTeclado()">
+	
+	<h1>Eventos</h1>
+
+	<h3>Onclick</h3>
+	<div onclick="eventosMouseTeclado()" style="background-color: #ccc; height: 150px; width: 150px"></div>
+
+	<h3>Ondblclick</h3>
+	<div ondblclick="eventosMouseTeclado()" style="background-color: #ccc; height: 150px; width: 150px"></div>
+
+	<h3>OnMouseDown</h3>
+	<div onmousedown="eventosMouseTeclado()" style="background-color: #ccc; height: 150px; width: 150px"></div>
+
+	<h3>OnMouseOver</h3>
+	<div onmouseover="eventosMouseTeclado()" style="background-color: #ccc; height: 150px; width: 150px"></div>
+
+
+	<h3>OnMouseOut</h3>
+	<div onmouseout="eventosMouseTeclado()" style="background-color: #ccc; height: 150px; width: 150px"></div>
+
+
+	<h1>Eventos teclado</h1>
+	<input onkeypress="eventosMouseTeclado()" type="text">
+
+	<input onkeydown="eventosMouseTeclado()" type="text">
+
+	<input onkeyup="eventosMouseTeclado()" type="text">
+
+
+	<h1>Eventos Formulário</h1>
+		<input onfocus="eventosMouseTeclado()" onblur="eventosMouseTeclado()" type="text">
+
+		<select onchange="eventosMouseTeclado()">
+			<option value="1">primeira opção</option>
+			<option value="2">segunda opção</option>
+		</select>
+
+
+	<script defer src="./script.js"></script>
+</body>
+</html>

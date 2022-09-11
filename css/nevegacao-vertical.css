@@ -1,0 +1,116 @@
+/* Barra de navegação vertical */
+
+#test ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*li {
+  padding: 5px 20px;
+  border: 1px solid red;
+  background: url(../imagem/set.png) no-repeat left center;
+}*/
+
+#test ul a {
+  /*border: 1px solid red;*/
+  width: 200px;
+  height: 40px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  background: #f7b600 url(../imagem/menu.png) no-repeat left bottom;
+}
+
+#test a:hover {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+/* Marcando páginas */
+
+#test #home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+/* Navegação horizontal */
+
+#horizontal ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+  background: #159cb0 url(../imagem/fundo-horizontal.png) repeat-x;
+  float: left;
+}
+
+#horizontal ul li {
+  float: left;
+}
+
+#horizontal ul a {
+  display: block;
+  padding: 0 2em;
+  line-height: 2.2em;
+  text-decoration: none;
+  color: #fff;
+  border-left: 1px solid gray;
+  background: url(../imagem/barra.png) repeat-y left top;
+}
+
+#horizontal ul .primeiro a {
+  background: none;
+}
+
+#horizontal ul a:hover {
+  color: #085662;
+  background: #44cade;
+}
+
+/* Navegação com Abas */
+
+#abas {
+	font-family: 'Trebuchet MS',Helvetica, sans-serif';
+}
+
+#abas ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+#abas ul li{
+border: 1px solid red;
+float: left;
+background: orange url(../imagem/aba-direita.png) no-repeat top right;
+border-radius: 5px;
+
+}
+
+#abas li a{
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagem/aba-esquerda.png) no-repeat top left;
+	color: #fff;
+}
+
+#abas a:hover{
+	color:#894a1f;
+}
+
+
+
+
+
+

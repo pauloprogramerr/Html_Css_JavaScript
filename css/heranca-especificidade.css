@@ -1,0 +1,23 @@
+#heranca {
+  border: 1px solid yellow;
+}
+
+/* Herança, border e background não são herdados */
+
+body {
+  color: red;
+}
+
+/* Especificidade */
+
+.pagina p {
+  color: blue !important;
+}
+
+.pagina p {
+  color: red;
+}
+
+h3.amarelo {
+  color: yellow;
+}

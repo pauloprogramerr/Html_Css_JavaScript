@@ -1,0 +1,29 @@
+<html>	
+	<script>
+
+		//  Dica: crie uma função que recebe um número como parâmetro e dentro dela crie uma estrutura
+		//  de repetição que verifique se existe algum número menor que o parâmetro e maior que 1 que seja
+		//  divisível pelo parâmetro. Se encontrar algum, quer dizer que o número em questão não é primo.
+		//  Se não encontrar, quer dizer que o número é primo.
+
+		//  operador ternário (false ? 'falso':'verdadeiro')	
+
+		function verificaNumeroPrimo(number){
+
+			let contador = 0;	
+
+			for (let i = 1; i <= number; i++) {
+				if (number % i === 0) {
+					contador++;	
+				}
+			}
+				if (contador === 2) {
+					console.log(`O numero ${number} é primo.`);				
+				}
+				else{
+					console.log(`O numero ${number} não é primo.`);			
+			}
+		}
+
+	</script>
+</html>

@@ -1,0 +1,173 @@
+<html>
+	<script>
+
+		let cachorro = {
+
+			// criando o metodo e se separa por virgula
+			latir: function(){
+				console.log("Au Au");
+			},
+
+			rosnar: function(){
+				console.log("grrrrrr")
+			}
+		}
+
+		// getters and setters
+		let pessoa = {
+			nome: '',
+			setNome: function(novoNome){
+				this.nome = novoNome;
+			},
+			getNome: function(){
+				return this.nome;
+			} 
+		}
+
+		let teste = Object.create(pessoa);
+		teste.nome = 'Pauladas';
+
+
+		// instância por função "Construtor"
+		function criarCachorro(raca, patas, cor){
+			let cachorro = Object.create({});
+			cachorro.raca = raca;
+			cachorro.patas = patas;
+			cachorro.cor = cor;
+		}
+
+		// classe
+		function Cachorro(raca) {this.raca = raca;}
+		let husky = new Cachorro('Husky');
+
+		let patas = Symbol();
+
+		Cachorro.prototype[patas] = 4;
+
+
+		let doberman = criarCachorro('Doberman', 'preta');
+		console.log(doberman);
+
+		// acessando symbol
+		console.log(Cachorro.prototype[patas]);
+
+		class Mamifero{
+			constructor(patas){
+				this.patas = patas;
+			}
+		}
+
+		// atualização ES6
+		class Cachorro2  extends Mamifero {
+			constructor(raca){
+				this.raca = raca;
+			}
+			// getter and setter 2
+			get verRaca(){
+				return 'Raca é ' + this.raca;
+			}
+			set novaRaca(value){
+				this.raca = value;
+
+				// exceptions 	
+				throw new Error("O valor etc...");
+			
+
+			try{
+
+			}catch(error){
+
+			}
+		}
+}		
+		//expressões regulares
+		let reg = new RegExp("teste");
+		let reg1 = /teste/;
+		let num = /[0-9]/;
+		let ano = /\d\d\d\d/;
+		let palavraTresLetras = /\w\w\w/;
+		let operadorNot = /[^a-z]/;
+		let operadorPlus = /\d+/;
+		let operadorQuestion = /\d?\s?/;
+		let operadorDecisao = /\d{4,5}-\d{4}/;
+		let metodoExec = /\d/.exec("O numero 100");
+		let metodoMatch = "O numero 100".match(/\d+/);
+		let choicePattern = /\d + (bananas| maçãs|laranjas)/;
+		let validarDominio = /www.\w+\.com|com.br/;
+		let validarEmail = /\w+@\w+\.\w+/;
+		let validarNascimento = /^[0-9]{2}[/][0-9]{2}[/][0-9]{4}/;
+
+		console.log(reg.test("tem teste"));
+		console.log(reg1.test("não tem"));
+
+		let labrador = new Cachorro2("Labrador");
+
+		setTimeout(function() {
+			console.log("5"); 
+		}, 2000);
+
+
+		let promessa = Promise.resolve(4 + 8);
+		promessa.then((value) => console.log(`A soma é ${value}`));
+		let promessaError = Promise.resolve(new Error("Algo deu errado"));
+		promessaError
+		.then((value) => console.log(value))
+		.catch(reason => console.log("Error: "+ reason));
+
+		async function soma(a, b){
+			return a + b;
+		}
+
+		soma(2, 2).then(value =>
+			console.log(value));
+		
+		function somaComDelay(a, b){
+			return new Promise(resolve => {
+				setTimeout(function(){
+					resolve(a + b);
+				} 2000);
+			});
+		}
+
+		async function soma(a, b,c,d){
+			let x = somaComDelay(a, b);
+			let y = somaComDelay(c,d);
+			return await x + await y;
+
+		}
+		soma (2,4,6,8).then(y => console.log(y));
+
+		function rejeitandoPromise(num){
+			return new Promise((resolve, reject) => {
+				if (num == 2){
+					resolve(console.log("O numero é 2"));
+				}else{
+					reject(new Error("Falhou"));
+				}
+			})
+		}
+
+	// generators
+
+	function* genTest(){
+		let id = 0;
+		while(true){
+			yield id++;
+		}
+	}		
+	
+	let criarId = genTest();
+
+	console.log(criarId.next().value);
+	console.log(criarId.next().value);
+	console.log(criarId.next().value);
+
+
+
+
+
+
+
+
+	</script>	
+</html>

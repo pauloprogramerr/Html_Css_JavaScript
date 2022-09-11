@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilizando tabelas</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Estilizando Tabelas</h1>
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Produto</th>
+          <th class="numeros">Preço</th>
+        </tr>
+
+        <tr>
+          <td>001</td>
+          <td>Notebook</td>
+          <td class="numeros">2.500</td>
+        </tr>
+
+        <tr class="alternado">
+          <td>002</td>
+          <td>Tablet</td>
+          <td class="numeros">1.500</td>
+        </tr>
+
+        <tr>
+          <td>003</td>
+          <td>Iphone</td>
+          <td class="numeros">3.500</td>
+        </tr>
+
+        <tr class="alternado">
+          <td>004</td>
+          <td>Nexus</td>
+          <td class="numeros">3.500</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Estilizando Formulários --->
+    <div>
+      <h1>Estlizando Formulário</h1>
+      <form action="">
+        <fieldset>
+          <legend>Detalhes de contato</legend>
+
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+          <div>
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Comentários</legend>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Lembrar de mim</legend>
+          <div>
+            <label for="lembrar">
+              <input class="radio" type="radio" name="lembrar" id="sim" /> Sim
+            </label>
+          </div>
+
+          <div>
+            <label for="lembrar">
+              <input class="radio" type="radio" name="lembrar" id="nao" /> Não
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div>
+      <h1>Formulário Parte 2</h1>
+      <div id="container">
+        <img src="imagem/perfil.png" alt="imagem-perfil" />
+        <form action="">
+          <div>
+            <input
+              class="email"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <div>
+            <input
+              class="password"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <div>
+            <input class="submit" type="submit" value="Logar" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

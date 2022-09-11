@@ -1,0 +1,132 @@
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: #643d87 url(../imagem/fundo.png) no-repeat top center;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 600px;
+  border-collapse: separate;
+}
+
+th,
+td {
+  padding: 7px;
+}
+
+th {
+  text-transform: uppercase;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #111;
+  text-align: left;
+  font-size: 90%;
+  letter-spacing: 0.1em;
+}
+
+tr.alternado {
+  background-color: #efefef;
+}
+
+tr:hover {
+  background-color: #c3e6e5;
+}
+
+.numeros {
+  text-align: right;
+}
+
+/* Estilizando formulários */
+
+fieldset {
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input/*[type='text']*/ {
+  /* input[type='text'] selector com atributo, Não utilizado em navegadores mais antigos*/
+  width: 20em;
+}
+
+input.radio,
+input.checkbox,
+input.submit {
+  width: auto;
+}
+
+.radio {
+  margin-right: 1em;
+}
+
+textarea {
+  width: 20em;
+  height: 10em;
+}
+
+/* Formulário Parte 2 */
+
+#container {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+}
+
+#container img {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+
+input {
+  height: 40px;
+  width: 80%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding-left: 40px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: -10px;
+}
+
+input.email {
+  background-image: url(../imagem/icone-user.png);
+  background-size: 16%;
+}
+input.password {
+  background-image: url(../imagem/icone-cadeado.png);
+  background-size: 13%;
+}
+
+input.submit {
+  color: #fff;
+  background-color: #f79300;
+  border: 2px solid #db7d00;
+  padding: 5px 20px;
+  height: 45px;
+  width: 90%;
+  background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+  background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+  background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+  background: linear-gradient(to bottom, #faa600, #f68a00);
+}

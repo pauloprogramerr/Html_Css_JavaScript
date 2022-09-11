@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mata-mosquito.css" />
+    <title>Mata Mosquito</title>
+  </head>
+  <body onresize="ajustarTamanhoPalco()">
+    <div class="painel">
+      <div class="vida">
+        <img id="v1" src="../img/coracao_cheio.png" alt="vida 1" />
+        <img id="v2" src="../img/coracao_cheio.png" alt="vida 2" />
+        <img id="v3" src="../img/coracao_cheio.png" alt="vida 3" />
+        <img id="v4" src="../img/coracao_cheio.png" alt="vida 4" />
+        <img id="v5" src="../img/coracao_cheio.png" alt="vida 5" />
+      </div>
+      <div class="cronometro">
+        Tempo restante:
+        <span id="cronometro"></span>
+      </div>
+    </div>
+
+    <script src="../js/mataMosquito.js"></script>
+    <script>
+      document.getElementById('cronometro').innerHTML = tempo;
+      let criarMosca = setInterval(function () {
+        posicaoRandomica();
+      }, criaMoscaTempo);
+    </script>
+  </body>
+</html>

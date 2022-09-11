@@ -1,0 +1,39 @@
+body {
+	background: #00adf6 url('./img/img5.png') no-repeat;*/
+	/*background: #00adf6;*/
+	font: 16px Arial, Helvética, sans-serif;
+}
+
+#principal{
+	/*border: 1px solid red;*/
+	width: 900px; /* Largura */
+	/*height: 600px; /* Altura */
+}
+
+#conteudo{
+	background: #e8e8d9;
+	padding: 10px;
+}
+
+#menu{
+	background: #00a;
+	/*font-size: 40px;*/
+	padding: 18px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#rodape{
+	text-align: center;
+}
+
+h1{
+	color: #828271;
+	font-size: 1.2em;
+}
+
